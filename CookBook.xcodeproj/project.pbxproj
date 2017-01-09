@@ -16,6 +16,7 @@
 		D198636B1E23EEA5006598CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19863691E23EEA5006598CC /* LaunchScreen.storyboard */; };
 		D19863761E23EEA5006598CC /* CookBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863751E23EEA5006598CC /* CookBookTests.m */; };
 		D19863811E23EEA5006598CC /* CookBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863801E23EEA5006598CC /* CookBookUITests.m */; };
+		D198638F1E2410E0006598CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D198638E1E2410E0006598CC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D198637C1E23EEA5006598CC /* CookBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19863801E23EEA5006598CC /* CookBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookBookUITests.m; sourceTree = "<group>"; };
 		D19863821E23EEA5006598CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D198638E1E2410E0006598CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +105,11 @@
 		D19863571E23EEA5006598CC /* CookBook */ = {
 			isa = PBXGroup;
 			children = (
-				D198635B1E23EEA5006598CC /* AppDelegate.h */,
-				D198635C1E23EEA5006598CC /* AppDelegate.m */,
 				D198635E1E23EEA5006598CC /* ViewController.h */,
 				D198635F1E23EEA5006598CC /* ViewController.m */,
 				D19863611E23EEA5006598CC /* Main.storyboard */,
 				D19863671E23EEA5006598CC /* Assets.xcassets */,
 				D19863691E23EEA5006598CC /* LaunchScreen.storyboard */,
-				D198636C1E23EEA5006598CC /* Info.plist */,
 				D19863641E23EEA5006598CC /* CookBook.xcdatamodeld */,
 				D19863581E23EEA5006598CC /* Supporting Files */,
 			);
@@ -120,6 +119,10 @@
 		D19863581E23EEA5006598CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D198638E1E2410E0006598CC /* GoogleService-Info.plist */,
+				D198635B1E23EEA5006598CC /* AppDelegate.h */,
+				D198635C1E23EEA5006598CC /* AppDelegate.m */,
+				D198636C1E23EEA5006598CC /* Info.plist */,
 				D19863591E23EEA5006598CC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D198636B1E23EEA5006598CC /* LaunchScreen.storyboard in Resources */,
+				D198638F1E2410E0006598CC /* GoogleService-Info.plist in Resources */,
 				D19863681E23EEA5006598CC /* Assets.xcassets in Resources */,
 				D19863631E23EEA5006598CC /* Main.storyboard in Resources */,
 			);
