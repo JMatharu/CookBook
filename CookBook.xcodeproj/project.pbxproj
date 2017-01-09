@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D198635A1E23EEA5006598CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863591E23EEA5006598CC /* main.m */; };
 		D198635D1E23EEA5006598CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D198635C1E23EEA5006598CC /* AppDelegate.m */; };
-		D19863601E23EEA5006598CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D198635F1E23EEA5006598CC /* ViewController.m */; };
+		D19863601E23EEA5006598CC /* LoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D198635F1E23EEA5006598CC /* LoginPageViewController.m */; };
 		D19863631E23EEA5006598CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19863611E23EEA5006598CC /* Main.storyboard */; };
 		D19863661E23EEA5006598CC /* CookBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D19863641E23EEA5006598CC /* CookBook.xcdatamodeld */; };
 		D19863681E23EEA5006598CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19863671E23EEA5006598CC /* Assets.xcassets */; };
@@ -41,8 +41,8 @@
 		D19863591E23EEA5006598CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D198635B1E23EEA5006598CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D198635C1E23EEA5006598CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D198635E1E23EEA5006598CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D198635F1E23EEA5006598CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D198635E1E23EEA5006598CC /* LoginPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPageViewController.h; sourceTree = "<group>"; };
+		D198635F1E23EEA5006598CC /* LoginPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPageViewController.m; sourceTree = "<group>"; };
 		D19863621E23EEA5006598CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D19863651E23EEA5006598CC /* CookBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CookBook.xcdatamodel; sourceTree = "<group>"; };
 		D19863671E23EEA5006598CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,12 +105,9 @@
 		D19863571E23EEA5006598CC /* CookBook */ = {
 			isa = PBXGroup;
 			children = (
-				D198635E1E23EEA5006598CC /* ViewController.h */,
-				D198635F1E23EEA5006598CC /* ViewController.m */,
-				D19863611E23EEA5006598CC /* Main.storyboard */,
-				D19863671E23EEA5006598CC /* Assets.xcassets */,
-				D19863691E23EEA5006598CC /* LaunchScreen.storyboard */,
-				D19863641E23EEA5006598CC /* CookBook.xcdatamodeld */,
+				D19863911E2411B5006598CC /* Features */,
+				D19863931E2411DA006598CC /* StoryBoard */,
+				D19863901E241171006598CC /* AppDelegate */,
 				D19863581E23EEA5006598CC /* Supporting Files */,
 			);
 			path = CookBook;
@@ -119,9 +116,9 @@
 		D19863581E23EEA5006598CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D19863671E23EEA5006598CC /* Assets.xcassets */,
+				D19863641E23EEA5006598CC /* CookBook.xcdatamodeld */,
 				D198638E1E2410E0006598CC /* GoogleService-Info.plist */,
-				D198635B1E23EEA5006598CC /* AppDelegate.h */,
-				D198635C1E23EEA5006598CC /* AppDelegate.m */,
 				D198636C1E23EEA5006598CC /* Info.plist */,
 				D19863591E23EEA5006598CC /* main.m */,
 			);
@@ -144,6 +141,41 @@
 				D19863821E23EEA5006598CC /* Info.plist */,
 			);
 			path = CookBookUITests;
+			sourceTree = "<group>";
+		};
+		D19863901E241171006598CC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D198635B1E23EEA5006598CC /* AppDelegate.h */,
+				D198635C1E23EEA5006598CC /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D19863911E2411B5006598CC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D19863921E2411CA006598CC /* Login */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		D19863921E2411CA006598CC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D198635E1E23EEA5006598CC /* LoginPageViewController.h */,
+				D198635F1E23EEA5006598CC /* LoginPageViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		D19863931E2411DA006598CC /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D19863691E23EEA5006598CC /* LaunchScreen.storyboard */,
+				D19863611E23EEA5006598CC /* Main.storyboard */,
+			);
+			name = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19863661E23EEA5006598CC /* CookBook.xcdatamodeld in Sources */,
-				D19863601E23EEA5006598CC /* ViewController.m in Sources */,
+				D19863601E23EEA5006598CC /* LoginPageViewController.m in Sources */,
 				D198635D1E23EEA5006598CC /* AppDelegate.m in Sources */,
 				D198635A1E23EEA5006598CC /* main.m in Sources */,
 			);

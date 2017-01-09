@@ -6,13 +6,13 @@
 //  Copyright © 2017 Jagdeep Matharu. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginPageViewController.h"
 
-@interface ViewController ()
+@interface LoginPageViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LoginPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
