@@ -19,6 +19,7 @@
 		D19863761E23EEA5006598CC /* CookBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863751E23EEA5006598CC /* CookBookTests.m */; };
 		D19863811E23EEA5006598CC /* CookBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863801E23EEA5006598CC /* CookBookUITests.m */; };
 		D198638F1E2410E0006598CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D198638E1E2410E0006598CC /* GoogleService-Info.plist */; };
+		D198639A1E242434006598CC /* FlatUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863991E242434006598CC /* FlatUIHelper.m */; };
 		D6CE670F4133B37D2A1D4185 /* libPods-CookBookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CFE204D2F006FEB011DFE4 /* libPods-CookBookUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		D19863801E23EEA5006598CC /* CookBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookBookUITests.m; sourceTree = "<group>"; };
 		D19863821E23EEA5006598CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D198638E1E2410E0006598CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D19863981E242434006598CC /* FlatUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatUIHelper.h; sourceTree = "<group>"; };
+		D19863991E242434006598CC /* FlatUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatUIHelper.m; sourceTree = "<group>"; };
 		D38B18D349422428A422C917 /* Pods-CookBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookBookTests/Pods-CookBookTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +198,7 @@
 		D19863911E2411B5006598CC /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				D19863941E24226C006598CC /* Helper */,
 				D19863921E2411CA006598CC /* Login */,
 			);
 			name = Features;
@@ -216,6 +220,15 @@
 				D19863611E23EEA5006598CC /* Main.storyboard */,
 			);
 			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		D19863941E24226C006598CC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D19863981E242434006598CC /* FlatUIHelper.h */,
+				D19863991E242434006598CC /* FlatUIHelper.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19863661E23EEA5006598CC /* CookBook.xcdatamodeld in Sources */,
+				D198639A1E242434006598CC /* FlatUIHelper.m in Sources */,
 				D19863601E23EEA5006598CC /* LoginPageViewController.m in Sources */,
 				D198635D1E23EEA5006598CC /* AppDelegate.m in Sources */,
 				D198635A1E23EEA5006598CC /* main.m in Sources */,
@@ -655,6 +669,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P9PPQ624VE;
 				INFOPLIST_FILE = CookBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jmatharu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -668,6 +683,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P9PPQ624VE;
 				INFOPLIST_FILE = CookBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jmatharu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -747,6 +763,7 @@
 				D19863871E23EEA5006598CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D19863881E23EEA5006598CC /* Build configuration list for PBXNativeTarget "CookBookTests" */ = {
 			isa = XCConfigurationList;
@@ -755,6 +772,7 @@
 				D198638A1E23EEA5006598CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D198638B1E23EEA5006598CC /* Build configuration list for PBXNativeTarget "CookBookUITests" */ = {
 			isa = XCConfigurationList;
@@ -763,6 +781,7 @@
 				D198638D1E23EEA5006598CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

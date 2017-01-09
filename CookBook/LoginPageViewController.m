@@ -7,8 +7,11 @@
 //
 
 #import "LoginPageViewController.h"
+#import "FlatUIKit.h"
+#import <FlatUIKit/FlatUIKit.h>
 
 @interface LoginPageViewController ()
+@property (weak, nonatomic) IBOutlet FUIButton *SignIn;
 
 @end
 
