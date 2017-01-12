@@ -126,6 +126,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D1521AE11E282D26002EEAA9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D19B08F61E282AB300D257D6 /* PlistHelper.h */,
+				D19B08F71E282AB300D257D6 /* PlistHelper.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		D198634C1E23EEA5006598CC = {
 			isa = PBXGroup;
 			children = (
@@ -228,10 +237,9 @@
 		D19863941E24226C006598CC /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D1521AE11E282D26002EEAA9 /* Utils */,
 				D19863981E242434006598CC /* FlatUIHelper.h */,
 				D19863991E242434006598CC /* FlatUIHelper.m */,
-				D19B08F61E282AB300D257D6 /* PlistHelper.h */,
-				D19B08F71E282AB300D257D6 /* PlistHelper.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
