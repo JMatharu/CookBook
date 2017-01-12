@@ -6,7 +6,9 @@
 //  Copyright © 2017 Jagdeep Matharu. All rights reserved.
 //
 
+@import Firebase;
 #import "AppDelegate.h"
+#import <GoogleSignIn/GoogleSignIn.h>
 
 @interface AppDelegate ()
 
@@ -14,9 +16,16 @@
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [[GIDSignIn sharedInstance] handleURL:url sourceApplication:sourceApplication
+                                      annotation:annotation];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [FIRApp configure];
     return YES;
 }
 

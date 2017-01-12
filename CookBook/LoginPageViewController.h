@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AMSmoothAlertView.h"
+#import <GoogleSignIn/GoogleSignIn.h>
 
-@interface LoginPageViewController : UIViewController
+@interface LoginPageViewController : UIViewController <GIDSignInDelegate, GIDSignInUIDelegate>
 
 
 @end

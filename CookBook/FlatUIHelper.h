@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FlatUIKit.h"
+#import <FlatUIKit/FlatUIKit.h>
 
 @interface FlatUIHelper : NSObject
+
+- (FUIButton *) flatButton: (FUIButton *) uiButton
+                 withTitle:(NSString *) title
+                 withWidth:(CGFloat) width
+                withHeight:(CGFloat) height;
 
 @end

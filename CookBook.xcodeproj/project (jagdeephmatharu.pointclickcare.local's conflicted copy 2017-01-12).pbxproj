@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F33D61AB3319ECE38946654 /* libPods-CookBookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 604E28D27C4E92246F9FB7D0 /* libPods-CookBookTests.a */; };
 		69F854432759160798D54089 /* libPods-CookBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE6699AE8940AC3BBB13630 /* libPods-CookBook.a */; };
+		D15948371E27FEBC0013E906 /* PlistHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D15948361E27FEBC0013E906 /* PlistHelper.m */; };
 		D198635A1E23EEA5006598CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863591E23EEA5006598CC /* main.m */; };
 		D198635D1E23EEA5006598CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D198635C1E23EEA5006598CC /* AppDelegate.m */; };
 		D19863601E23EEA5006598CC /* LoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D198635F1E23EEA5006598CC /* LoginPageViewController.m */; };
@@ -20,7 +21,6 @@
 		D19863811E23EEA5006598CC /* CookBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863801E23EEA5006598CC /* CookBookUITests.m */; };
 		D198638F1E2410E0006598CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D198638E1E2410E0006598CC /* GoogleService-Info.plist */; };
 		D198639A1E242434006598CC /* FlatUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863991E242434006598CC /* FlatUIHelper.m */; };
-		D19B08F81E282AB300D257D6 /* PlistHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D19B08F71E282AB300D257D6 /* PlistHelper.m */; };
 		D6CE670F4133B37D2A1D4185 /* libPods-CookBookUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CFE204D2F006FEB011DFE4 /* libPods-CookBookUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +50,8 @@
 		96C237DE0BFC213E3CC0C044 /* Pods-CookBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookBookUITests/Pods-CookBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8A47C1247473AA13FB8B249 /* Pods-CookBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookBook/Pods-CookBook.release.xcconfig"; sourceTree = "<group>"; };
 		BCE6699AE8940AC3BBB13630 /* libPods-CookBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CookBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15948351E27FEBC0013E906 /* PlistHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistHelper.h; sourceTree = "<group>"; };
+		D15948361E27FEBC0013E906 /* PlistHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistHelper.m; sourceTree = "<group>"; };
 		D19863551E23EEA5006598CC /* CookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19863591E23EEA5006598CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D198635B1E23EEA5006598CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,8 +72,6 @@
 		D198638E1E2410E0006598CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D19863981E242434006598CC /* FlatUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatUIHelper.h; sourceTree = "<group>"; };
 		D19863991E242434006598CC /* FlatUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatUIHelper.m; sourceTree = "<group>"; };
-		D19B08F61E282AB300D257D6 /* PlistHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistHelper.h; sourceTree = "<group>"; };
-		D19B08F71E282AB300D257D6 /* PlistHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistHelper.m; sourceTree = "<group>"; };
 		D38B18D349422428A422C917 /* Pods-CookBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookBookTests/Pods-CookBookTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +124,15 @@
 				41F3327FC0E7B098DE215A4B /* Pods-CookBookUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D15948341E27FEA10013E906 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D15948351E27FEBC0013E906 /* PlistHelper.h */,
+				D15948361E27FEBC0013E906 /* PlistHelper.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		D198634C1E23EEA5006598CC = {
@@ -228,10 +237,9 @@
 		D19863941E24226C006598CC /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D15948341E27FEA10013E906 /* Utils */,
 				D19863981E242434006598CC /* FlatUIHelper.h */,
 				D19863991E242434006598CC /* FlatUIHelper.m */,
-				D19B08F61E282AB300D257D6 /* PlistHelper.h */,
-				D19B08F71E282AB300D257D6 /* PlistHelper.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -522,9 +530,9 @@
 			files = (
 				D19863661E23EEA5006598CC /* CookBook.xcdatamodeld in Sources */,
 				D198639A1E242434006598CC /* FlatUIHelper.m in Sources */,
+				D15948371E27FEBC0013E906 /* PlistHelper.m in Sources */,
 				D19863601E23EEA5006598CC /* LoginPageViewController.m in Sources */,
 				D198635D1E23EEA5006598CC /* AppDelegate.m in Sources */,
-				D19B08F81E282AB300D257D6 /* PlistHelper.m in Sources */,
 				D198635A1E23EEA5006598CC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +606,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -645,6 +654,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
