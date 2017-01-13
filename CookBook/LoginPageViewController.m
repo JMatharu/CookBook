@@ -38,6 +38,9 @@
      [[GIDSignIn sharedInstance] signIn];
 }
 
+- (IBAction)clearCache:(id)sender {
+    [[GIDSignIn sharedInstance] disconnect];
+}
 
 //FireBase
 - (void) setFirebase{
@@ -70,6 +73,17 @@
             } //WIFI Connectivity TODO
             [alert show];
         }];
+    }
+}
+
+-(void) signIn:(GIDSignIn *)signIn didDisconnectWithUser:(GIDGoogleUser *)user withError:(NSError *)error{
+    if (error==nil) {
+        AMSmoothAlertView *alert;
+        alert = [[AMSmoothAlertView alloc] initDropAlertWithTitle:@"Good By !!"
+                                                          andText:@""
+                                                  andCancelButton:NO
+                                                     forAlertType:AlertInfo];
+        [alert show];
     }
 }
 

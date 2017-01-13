@@ -28,6 +28,14 @@
                                     <action selector="clickSigninWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCD-u5-Ud7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr5-sg-ckT">
+                                <rect key="frame" x="170" y="264" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clearCache:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Qf-mS-anB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
