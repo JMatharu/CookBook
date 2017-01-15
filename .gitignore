@@ -11,6 +11,9 @@
 ##Pods
 Pods/
 
+## Google
+CookBook/GoogleService-Info.plist
+
 ## Build generated
 build/
 DerivedData/
