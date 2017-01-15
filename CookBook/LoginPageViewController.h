@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AMSmoothAlertView.h"
 #import <GoogleSignIn/GoogleSignIn.h>
+#import <Firebase/Firebase.h>
+#import <FirebaseDatabase/FirebaseDatabase.h>
 
 @interface LoginPageViewController : UIViewController <GIDSignInDelegate, GIDSignInUIDelegate>
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F33D61AB3319ECE38946654 /* libPods-CookBookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 604E28D27C4E92246F9FB7D0 /* libPods-CookBookTests.a */; };
 		69F854432759160798D54089 /* libPods-CookBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE6699AE8940AC3BBB13630 /* libPods-CookBook.a */; };
+		D1521AEA1E2857F3002EEAA9 /* LandingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1521AE91E2857F3002EEAA9 /* LandingPageViewController.m */; };
 		D198635A1E23EEA5006598CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863591E23EEA5006598CC /* main.m */; };
 		D198635D1E23EEA5006598CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D198635C1E23EEA5006598CC /* AppDelegate.m */; };
 		D19863601E23EEA5006598CC /* LoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D198635F1E23EEA5006598CC /* LoginPageViewController.m */; };
@@ -50,6 +51,8 @@
 		96C237DE0BFC213E3CC0C044 /* Pods-CookBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookBookUITests/Pods-CookBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8A47C1247473AA13FB8B249 /* Pods-CookBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookBook/Pods-CookBook.release.xcconfig"; sourceTree = "<group>"; };
 		BCE6699AE8940AC3BBB13630 /* libPods-CookBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CookBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1521AE81E2857F3002EEAA9 /* LandingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingPageViewController.h; sourceTree = "<group>"; };
+		D1521AE91E2857F3002EEAA9 /* LandingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingPageViewController.m; sourceTree = "<group>"; };
 		D19863551E23EEA5006598CC /* CookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19863591E23EEA5006598CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D198635B1E23EEA5006598CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,15 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		D1521AE21E285760002EEAA9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D1521AE81E2857F3002EEAA9 /* LandingPageViewController.h */,
+				D1521AE91E2857F3002EEAA9 /* LandingPageViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		D198634C1E23EEA5006598CC = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +222,7 @@
 		D19863911E2411B5006598CC /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				D1521AE21E285760002EEAA9 /* Main */,
 				D19863941E24226C006598CC /* Helper */,
 				D19863921E2411CA006598CC /* Login */,
 			);
@@ -528,6 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1521AEA1E2857F3002EEAA9 /* LandingPageViewController.m in Sources */,
 				D19863661E23EEA5006598CC /* CookBook.xcdatamodeld in Sources */,
 				D198639A1E242434006598CC /* FlatUIHelper.m in Sources */,
 				D19863601E23EEA5006598CC /* LoginPageViewController.m in Sources */,

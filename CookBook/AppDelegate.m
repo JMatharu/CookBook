@@ -11,7 +11,6 @@
 #import <GoogleSignIn/GoogleSignIn.h>
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate

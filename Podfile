@@ -7,9 +7,11 @@ target 'CookBook' do
 
 pod 'FlatUIKit'
 pod 'Firebase/Core'
+pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
 pod 'AMSmoothAlert', '~> 1.0'
+pod 'Firebase/Database'
 
   # Pods for CookBook
 
