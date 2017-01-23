@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "LandingPageViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -17,6 +18,9 @@
 
 - (void)saveContext;
 
+@property (strong, nonatomic) LandingPageViewController *landingPageViewController;
+
+@property (strong, nonatomic) UINavigationController *navigationController;
 
 @end
 

@@ -13,7 +13,6 @@
 		D198635A1E23EEA5006598CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D19863591E23EEA5006598CC /* main.m */; };
 		D198635D1E23EEA5006598CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D198635C1E23EEA5006598CC /* AppDelegate.m */; };
 		D19863601E23EEA5006598CC /* LoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D198635F1E23EEA5006598CC /* LoginPageViewController.m */; };
-		D19863631E23EEA5006598CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19863611E23EEA5006598CC /* Main.storyboard */; };
 		D19863661E23EEA5006598CC /* CookBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D19863641E23EEA5006598CC /* CookBook.xcdatamodeld */; };
 		D19863681E23EEA5006598CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19863671E23EEA5006598CC /* Assets.xcassets */; };
 		D198636B1E23EEA5006598CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19863691E23EEA5006598CC /* LaunchScreen.storyboard */; };
@@ -59,7 +58,6 @@
 		D198635C1E23EEA5006598CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D198635E1E23EEA5006598CC /* LoginPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPageViewController.h; sourceTree = "<group>"; };
 		D198635F1E23EEA5006598CC /* LoginPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPageViewController.m; sourceTree = "<group>"; };
-		D19863621E23EEA5006598CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D19863651E23EEA5006598CC /* CookBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CookBook.xcdatamodel; sourceTree = "<group>"; };
 		D19863671E23EEA5006598CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D198636A1E23EEA5006598CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -242,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				D19863691E23EEA5006598CC /* LaunchScreen.storyboard */,
-				D19863611E23EEA5006598CC /* Main.storyboard */,
 			);
 			name = StoryBoard;
 			sourceTree = "<group>";
@@ -378,7 +375,6 @@
 				D198636B1E23EEA5006598CC /* LaunchScreen.storyboard in Resources */,
 				D198638F1E2410E0006598CC /* GoogleService-Info.plist in Resources */,
 				D19863681E23EEA5006598CC /* Assets.xcassets in Resources */,
-				D19863631E23EEA5006598CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,14 +579,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D19863611E23EEA5006598CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D19863621E23EEA5006598CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D19863691E23EEA5006598CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

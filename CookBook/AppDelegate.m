@@ -14,6 +14,8 @@
 @end
 
 @implementation AppDelegate
+@synthesize landingPageViewController;
+@synthesize navigationController;
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
@@ -23,8 +25,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //Firebase
     [FIRApp configure];
+    
+    //Creating view Controller for login
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.landingPageViewController = [[LandingPageViewController alloc] init];
+    navigationController = [[UINavigationController alloc] initWithRootViewController:self.landingPageViewController];
+    
+    self.window.rootViewController = navigationController;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

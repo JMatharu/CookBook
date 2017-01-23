@@ -27,6 +27,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    //UI
+    [self.view setBackgroundColor:[UIColor orangeColor]];
+    
     FlatUIHelper *flatUIObj = [[FlatUIHelper alloc] init];
     [flatUIObj flatButton:self.signInWithGoogle withTitle:@"Sign In With Google"withWidth:300 withHeight:50];
     
@@ -121,6 +124,12 @@
             FIRDatabaseReference *newUserReference = [usersReference child:user.uid];
             [newUserReference setValue:userInformation];
         }];
+        
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LaunchScreen" bundle:NULL];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"LaunchScreenSB"];
+        [[self navigationController] pushViewController:vc animated:YES];
+//        LandingPageViewController *landingPageViewController = [[LandingPageViewController alloc] init];
+//        [self.navigationController pushViewController:landingPageViewController animated:YES];
     }
 }
 
